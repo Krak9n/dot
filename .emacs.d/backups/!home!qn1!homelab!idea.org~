@@ -1,0 +1,24 @@
+--- FIRST HOMELAB
+Using Raspberry PI as my main hosting device.
+
+# PROTECTION
+* custom proxy for controlling the traffic
+* shadowsocks for hiding vpn used for torrenting, and shaddy stuff
+* openvpn
+* dns over https
+* dns over tls
+
+# TECH STACK
+* website
+* jellyfin
+* pi-hole
+* own hosted wikipedia
+* locally hosted llm
+
+# IDEAS
+Having a separate Hot-Spot device which would work with my e-sim for providing
+wi-fi access.
+Second Laptop for fast moving.
+
+--- BIG INDEPENDENT
+Setting up the whole case stack after moving out the aunt's house.

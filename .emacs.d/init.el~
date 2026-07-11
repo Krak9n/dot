@@ -1,0 +1,15 @@
+;; (load "~/.emacs.d/darkk.el")
+
+(setq inhibit-startup-screen t) ;; fancy stuff
+(global-visual-line-mode t)
+(global-display-line-numbers-mode)
+(show-paren-mode t)
+
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(column-number-mode 1) ;; numbers
+
+;;(load-theme 'darkk t)
+
+(set-face-attribute 'default nil :font "JetBrainsMono Nerd Font")

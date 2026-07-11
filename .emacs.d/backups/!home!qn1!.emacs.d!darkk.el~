@@ -1,0 +1,13 @@
+(deftheme darkk "small theme for emacs made at night")
+
+(let (
+      (background "#FFFFFF")
+      (foregound "#000000")
+      (gray "#8F8282")
+      (red "#730A0A")))
+
+(custom-theme-set-faces
+ 'darkk
+ '(default ((:foreground ,foreground :background ,background))))
+ 
+(provide-theme 'darkk)

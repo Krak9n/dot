@@ -1,0 +1,39 @@
+use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
+use actix_files::Files;
+use tera::{Tera, Context};
+
+#[get("/")]
+async fn index(tmpl: web::Data<Tera>) -> impl Responder {
+    let mut ctx = Context::new();
+    ctx.insert("name", "u shit");
+
+    match tmpl.render("index.html", &ctx) {
+        Ok(html) => HttpResponse::Ok()
+            .content_type("text/html")
+            .body(html),
+        Err(e) => {
+            eprintln!("Template error: {e}");
+            HttpResponse::InternalServerError().body("Template rendering error")
+        }
+    }
+}
+
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    // runs once per every work thread
+    HttpServer::new(|| {
+        let mut tera = Tera::new();
+        tera.load_from_glob("../templates/**/*.html")
+            .expect("failed to load templates");
+        
+        // Server app
+        App::new()
+            .app_data(web::Data::new(tera)) // takes tera's instance
+            .service(index) // registers the / handle
+            .service(Files::new("/static", "./static"))
+    })
+
+        .bind(("localhost", 8080))? // errors ?
+        .run() // event loop
+        .await
+}

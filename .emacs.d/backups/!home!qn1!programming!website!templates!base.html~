@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<title>{% block title %} website's index{% endblock %}</title>
+	<link rel="stylesheet" href="/static/css/output.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+	<nav class="flex items-center justify-between px-6 py-4 shadow-sm">
+	  {% include "partials/nav.html.tera" %}
+	</nav>
+	<main class="max-w-4xl mx-auto px-4 py-8">
+	  {% block content %}{% endblock %}
+	</main>
+  </body>
+</html>

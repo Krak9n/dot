@@ -1,0 +1,61 @@
+--- BIG PERSONAL PROJECTS
+[] status bar for wayland. 
+    first version will be a status bar written in quickshell.
+[] website.
+    blog, git, portfolio
+[] rework the CV
+[] app launcher script in rust.
+   - uses regex behind the scenes to do this nice grep search
+[] status bar for wayland. 
+    simple status bar rewritten in rust.
+[] judas.   
+    rewrite of the soltaire in Cpp with OpenGL backend
+[] mp3player.
+    my old EE project that I didn't have time to finish
+[] dvorak layout keyboard.
+    another EE project.
+[] plankalkul compiler.
+    cpp compiler for the plankalkul programming language designed by Zuse.
+
+--- LOCAL STUFF
+[] before obtaining full indendance i could re-buy that rapsberry pi from, 
+    and use it as my home-server for now. at least for hosting 
+    the website, and git repos. also could run jellyfish, and pi-hole there.
+[] setting up that complete homelab with everything designed previously. [delayed]
+
+--- OLYMPIADS & COMPETITVE
+[] leetcode
+[] olicyber ctfs
+
+--- GOALS
+[] read, and write mostly rust (!!!)
+   - for this i'd need to follow the rust book
+[] become more proficient in python, javascript, and have more understanding of x86 asm
+[] contribute to the linux kernel (!!!!)
+[] try to become a better ctf "hunter". become proficient in binary(!), and reverse(!), 
+    know at least some basics of web. and know at least something about crypto.
+    find a team of people and start participating in events, become stronger.
+[] learn to solve rubik's cube in under 16 seconds
+[] be a nice chess player (!)
+[] learn regex
+
+--- CLOSE TERM GOALS
+* do a dev log series every week about my progress about stuff
+* stream every day with a progress on my projects
+* learn rust
+* do CTFs
+
+----
+Besides all of the written above, I'd love to stream all of my progress on these projects.
+Website? Whatever, just click on stream and stream.
+
+And also, focus more on freelancing, and not on the projects. Do last ones in a spare time, 
+while the JOB should be my main focus.
+
+---- 
+# CLOSE TIME PLAN
+* configure emacs
+* write the quickshell script for status bar
+* setup up the website
+* look for a freelance job
+* after getting enough money from the freelance go get that raspberry pi, and setup the server

@@ -1,0 +1,10 @@
+[package]
+name = "website"
+version = "0.1.0"
+edition = "2024"
+description = "My personal website that holds nothing but my personal content."
+license = "MIT"
+
+[dependencies]
+actix-web = "4"
+tera = "2"
