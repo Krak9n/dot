@@ -1,8 +1,0 @@
-Host github.com
-	 HostName github
-  	 User git
-  	 IdentityFile ~/.ssh/id_ed25519
-
-Host aur.archlinux.org
-	 IdentityFile ~/.ssh/aur
-  	 User aur	 
