@@ -1,6 +1,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
-(load-file "~/.emacs.d/custom.el")
-(load "~/.emacs.d/voidlight-theme.el")
+(load-file "~/.emacs.d/custom.el") 
+(load-file "~/.emacs.d/org-mode.el")
+(load-file "~/.emacs.d/voidlight-theme.el")
 
 (setq inhibit-startup-screen t) ;; fancy stuff
 (global-visual-line-mode t)
@@ -65,3 +66,28 @@
           rust-cargo-bin (concat dot-cargo-bin "cargo")
           rust-format-on-save t)))
 
+;; evil mode
+(setq evil-want-keybinding nil)
+(require 'evil)
+(evil-mode 1)
+;; (evil-set-initial-state 'dired-mode 'emacs)
+;; magit
+(use-package magit
+  :ensure t)
+(use-package evil-collection 
+  :ensure t
+  :after evil
+  :init
+  (evil-collection-init))
+
+;; dired
+(use-package dired-open
+  :config
+  (setq dired-open-extensions '(
+								("pdf" . "zathura")
+								("mkv" . "mpv"))))
+(evil-define-key 'normal dired-mode-map "gu" 'revert-buffer)
+;;(use-package typst-ts-mode
+;;  :elpaca (:type git :host sourcehut :repo "meow_king/typst-ts-mode")
+;;  :custom
+;;  (typst-ts-mode-watch-options "--open"))

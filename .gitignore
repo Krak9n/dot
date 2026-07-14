@@ -5,4 +5,5 @@
 /.emacs.d/transient
 /.emacs.d/elpa
 /.emacs.d/eln-cache
+/.emacs.d/recetf
 /hypr/hyprland-bak.lua
