@@ -1,3 +1,4 @@
+/.emacs.d/*~
 /.emacs.d/backups
 /.emacs.d/auto-save-list
 /.emacs.d/init.el~
