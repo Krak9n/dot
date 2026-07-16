@@ -87,7 +87,4 @@
 								("pdf" . "zathura")
 								("mkv" . "mpv"))))
 (evil-define-key 'normal dired-mode-map "gu" 'revert-buffer)
-;;(use-package typst-ts-mode
-;;  :elpaca (:type git :host sourcehut :repo "meow_king/typst-ts-mode")
-;;  :custom
-;;  (typst-ts-mode-watch-options "--open"))
+(setq evil-undo-system 'undo-redo)
