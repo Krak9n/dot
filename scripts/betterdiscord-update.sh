@@ -33,7 +33,7 @@ if echo $pid -eq  " "; then
 fi
 
 # dont forget to change the app version if the script fails
-betterdiscordctl --d-modules ~/.config/discord/app-1.0.145/modules/discord_desktop_core-1 install
+betterdiscordctl --d-modules ~/.config/discord/app-1.0.149/modules/discord_desktop_core-1 install
 
 echo "DONE"
 # later implement smth with xdotool for automaticall moving on 

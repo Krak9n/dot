@@ -12,3 +12,4 @@ Main software used in my config:
 * zathura -> pdf reader with vim motions
 * betterdiscord
 * fish -> preferred shell for everyday usage
+
