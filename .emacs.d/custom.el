@@ -5,8 +5,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auctex dired-open evil-collection fish-mode haskell-mode lua-mode
-			magit org-roam-ui rust-mode tree-sitter typst-preview
+   '(auctex bash-completion dired-open evil-collection fish-mode
+			haskell-mode lua-mode magit markdown-mode meson-mode
+			org-roam-ui rust-mode systemd tree-sitter typst-preview
 			typst-ts-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
