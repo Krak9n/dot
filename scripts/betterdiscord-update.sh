@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 function latest() {
   tags=$(curl -s https://github.com/BetterDiscord/BetterDiscord/tags | grep 'href="/BetterDiscord/BetterDiscord/releases/tag/')
@@ -32,8 +32,9 @@ if echo $pid -eq  " "; then
   pkill Discord
 fi
 
-# dont forget to change the app version if the script fails
-betterdiscordctl --d-modules ~/.config/discord/app-1.0.149/modules/discord_desktop_core-1 install
+# requires betterdiscordctl to be installed
+# app- needs to be constantly changed
+betterdiscordctl --d-modules ~/.config/discord/app-1.0.151/modules/discord_desktop_core-1 install
 
 echo "DONE"
 # later implement smth with xdotool for automaticall moving on 
