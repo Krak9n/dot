@@ -4,8 +4,8 @@ set operation $argv[1]
 if test (count $argv) -lt 1
     echo "Usage: ssd <Option>"
     echo "Options:"
-    echo "-mount    mounts the ssd detected under /dev/sd something"
-    echo "-umount   unmounts the very same ssd detected previosly"
+    echo "  -mount:    mounts the ssd detected under /dev/sd something"
+    echo "  -umount:   unmounts the very same ssd detected previosly"
     exit 1
 end
 

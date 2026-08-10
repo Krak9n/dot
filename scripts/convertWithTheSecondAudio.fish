@@ -4,9 +4,10 @@
 # as the arguments take:
 # $1 -> directory with the files
 # $2 -> where to save to
-
 if test (count $argv) -lt 2
-   echo "Usage: .<path to>/convertWithSecondAudioTrack.fish <absolute path to the src> <absolute path to the save>"
+	echo "Usage:"
+	echo " convertWithSecondAudioTrack.fish <absolute path to the src> <absolute path to the save>"
+	exit 1
 end
 
 set path $argv[1]

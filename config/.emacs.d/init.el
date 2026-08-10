@@ -87,4 +87,13 @@
 								("pdf" . "zathura")
 								("mkv" . "mpv"))))
 (evil-define-key 'normal dired-mode-map "gu" 'revert-buffer)
-(setq evil-undo-system 'undo-redo)
+;;(setq evil-undo-system 'undo-redo)
+(require 'package)
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(require 'ox-latex)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)
+   (emacs-lisp . t)))
+
+(setq org-export-with-broken-links t)

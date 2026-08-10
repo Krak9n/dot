@@ -4,7 +4,7 @@ set srcDir $argv[1]
 set dstDir $argv[2]
 
 if test (count $argv) -lt 2
-    echo "has to be longer than two dude"
+    echo "The command has to be longer than 2 arguments."
     exit 1
 end
 

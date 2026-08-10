@@ -26,19 +26,18 @@ if latest -gt CurrentlyInstalled; then
   bun inject
 fi
 
-echo "DONE UPDATING"
+echo "Done updating."
 pid=$(ps -aux | grep "Discord")
 if echo $pid -eq  " "; then
   pkill Discord
 fi
 
 # requires betterdiscordctl to be installed
-# app- needs to be constantly changed
+# *app-* needs to be constantly changed
 betterdiscordctl --d-modules ~/.config/discord/app-1.0.151/modules/discord_desktop_core-1 install
 
-echo "DONE"
-# later implement smth with xdotool for automaticall moving on 
-# the third workspace
+echo "betterdiscordctl configuration finished."
+
 if echo $? -eq 0; then
     discord & 
 fi

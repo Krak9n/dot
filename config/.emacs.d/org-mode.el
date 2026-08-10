@@ -11,9 +11,20 @@
 ;; associating all org files with org mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode)) 
 (add-hook 'org-mode-hook 'org-indent-mode)
-;; remaps the priority keys
-(define-key org-mode-map (kbd "C-c <up>") 'org-priority-up)
-(define-key org-mode-map (kbd "C-c <down>") 'org-priority-down)
-(define-key global-map "\C-cl" 'org-store-link) ;; ?
-(define-key global-map "\C-ca" 'org-agenda)
-(define-key global-map "\C-cc" 'org-capture)
+
+(use-package org-roam
+  :init
+  :custom
+  (org-roam-directory "~/org/")
+  (org-roam-completion-everywhere t))
+
+(use-package websocket
+  :after org-roam)
+
+(use-package org-roam-ui
+  :after org-roam
+  :config
+  (setq org-roam-ui-sync-theme t
+		org-roam-ui-follow t
+		org-roam-ui-update-on-save t
+		org-roam-ui-open-on-start t))

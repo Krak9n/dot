@@ -1,4 +1,4 @@
-#!/usr/bin/fish
+#!/usr/bin/env fish
 
 set network_name $argv[1]
 if test (count $argv) -lt 1

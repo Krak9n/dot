@@ -7,8 +7,8 @@
  '(package-selected-packages
    '(auctex bash-completion dired-open evil-collection fish-mode
 			haskell-mode lua-mode magit markdown-mode meson-mode
-			org-roam-ui rust-mode systemd tree-sitter typst-preview
-			typst-ts-mode)))
+			org-babel-eval-in-repl org-roam-ui rust-mode systemd
+			tree-sitter typst-preview typst-ts-mode web-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

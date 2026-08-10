@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 function dir() {
 		du -xhd 1 $1
