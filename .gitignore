@@ -7,4 +7,5 @@
 /config/.emacs.d/elpa
 /config/.emacs.d/eln-cache
 /config/.emacs.d/recetf
+/config/.emacs.d/tramp
 /config/hypr/hyprland-bak.lua
