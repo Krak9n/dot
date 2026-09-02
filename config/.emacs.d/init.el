@@ -1,9 +1,11 @@
-(setq custom-file "~/.emacs.d/custom.el")
-(load-file "~/.emacs.d/custom.el") 
-(load-file "~/.emacs.d/org-mode.el")
-(load-file "~/.emacs.d/voidlight-theme.el")
+;; -*- lexical-binding: t; -*-
+(setq custom-file "~/.emacs.d/custom/custom.el")
+(load-file "~/.emacs.d/custom/custom.el") 
+(load-file "~/.emacs.d/custom/org-mode.el")
+(load-file "~/.emacs.d/custom/voidlight-theme.el")
 
-(setq inhibit-startup-screen t) ;; fancy stuff
+;; fancy editor stuff
+(setq inhibit-startup-screen t) 
 (global-visual-line-mode t)
 (global-display-line-numbers-mode)
 (show-paren-mode t)
@@ -11,21 +13,20 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-(column-number-mode 1) ;; numbers
+(column-number-mode 1) 
 (electric-pair-mode 1)
 (recentf-mode 1)
-
-;; backups 
-(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
 
 (load-theme 'voidlight t)
 
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode 4)
 (setq-default c-basic-offset 4)
-;;(add-hook 'prog-mode-hook 'enable-tabs)
 
-;; packages
+;; backups 
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups"))))
+
+;; package manager
 (require 'package) ;;emacs' package manager 
 (setq package-archives
 	  '(("melpa" . "https://melpa.org/packages/")
@@ -46,7 +47,7 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;; rust stuff
+;; Rust stuff package
 (require 'rust-mode)
 (defun sp1ff/rust/mode-hook ()
  "My rust-mode hook"
@@ -66,11 +67,12 @@
           rust-cargo-bin (concat dot-cargo-bin "cargo")
           rust-format-on-save t)))
 
-;; evil mode
+;; evil mode stuff
 (setq evil-want-keybinding nil)
 (require 'evil)
 (evil-mode 1)
-;; (evil-set-initial-state 'dired-mode 'emacs)
+(evil-define-key 'normal dired-mode-map "gu" 'revert-buffer)
+
 ;; magit
 (use-package magit
   :ensure t)
@@ -86,9 +88,8 @@
   (setq dired-open-extensions '(
 								("pdf" . "zathura")
 								("mkv" . "mpv"))))
-(evil-define-key 'normal dired-mode-map "gu" 'revert-buffer)
-;;(setq evil-undo-system 'undo-redo)
 (require 'package)
+;; babel
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (require 'ox-latex)
 (org-babel-do-load-languages

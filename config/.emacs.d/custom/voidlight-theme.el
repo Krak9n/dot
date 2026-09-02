@@ -1,5 +1,4 @@
-;;; voidlight-theme.el --- Minimal dark theme with warm tones and a subdued aesthetic
-
+;; -*- lexical-binding: t; -*-
 (deftheme voidlight "A minimal dark theme with subdued tones for comfortable coding.")
 
 (let* ((class '((class color) (min-colors 89)))

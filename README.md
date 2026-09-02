@@ -10,6 +10,7 @@ After recent reinstall of my OS, I have decided to rewrite most of my scripts, r
 * nvim  
 * betterdiscord   
 * fish    
+* zsh		# plan on maybe switching in some time
   
 **/scripts** on the other hand contains the scripts I rely on everyday.
 
