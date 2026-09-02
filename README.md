@@ -36,7 +36,8 @@ M-H/J/K/L		 	# resize a window
 M-h/j/k/l 			# change focus  
 ```  
    
-### TMUX shortcuts
+### tmux shortcuts  
+--- 
 ```bash
 CTRL + A				# prefix
 C-a + h/v				# split horizontally/vertically
