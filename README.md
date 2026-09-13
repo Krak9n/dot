@@ -9,7 +9,9 @@ After recent reinstall of my OS, I have decided to rewrite most of my scripts, r
 * keyd   
 * nvim   
 * betterdiscord   
-* fish     
+* zsh  
+
+Also previously used fish shell.  
   
 **/scripts** on the other hand contains the scripts I rely on everyday.  
   
